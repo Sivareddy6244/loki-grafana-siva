@@ -28,4 +28,8 @@ def test_divide_by_zero():
 
 # Optionally, you can run pytest.main() to execute the tests if not running pytest directly from command line
 if __name__ == "__main__":
+    def test_subtract():
+    assert subtract(10, 5) == 5
+    assert subtract(-2, -2) == 0
+    assert subtract(0, 10) == -10
     pytest.main()
