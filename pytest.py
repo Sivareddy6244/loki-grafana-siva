@@ -28,4 +28,9 @@ def test_divide_by_zero():
 
 # Optionally, you can run pytest.main() to execute the tests if not running pytest directly from command line
 if __name__ == "__main__":
+    
+def test_divide_by_zero():
+    with pytest.raises(ValueError):
+        divide(10, 0)
+
     pytest.main()
